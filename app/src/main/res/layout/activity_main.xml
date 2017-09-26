@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="100dp"
+    android:paddingLeft="48dp"
+    android:paddingRight="48dp"
+    android:paddingTop="100dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    tools:context="com.cs449.android.quickexpense.MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        style="@style/text_style"
+        android:text="Quick Expense Sign in" />
+
+    <EditText
+        style="@style/editText_style"
+        android:inputType="textEmailAddress"
+        android:hint="Username"
+        />
+
+    <EditText
+        style="@style/editText_style"
+        android:inputType="textPassword"
+        android:hint="Password"
+        />
+
+    <Button
+        style="@style/button_style"
+        android:text="LOG IN"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_style"
+            android:text="Register"
+            android:textColor="#2ecc71"/>
+
+    </LinearLayout>
+
+</LinearLayout>
