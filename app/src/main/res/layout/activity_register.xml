@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="100dp"
-    android:paddingLeft="48dp"
-    android:paddingRight="48dp"
-    android:paddingTop="10dp"
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
     android:gravity="center"
-    tools:context="com.cs449.android.quickexpense.MainActivity">
+    android:paddingLeft="48dp"
+    android:paddingRight="48dp"
+    tools:context="com.cs449.android.quickexpense.RegisterActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -19,30 +17,32 @@
         android:layout_height="150dp"
         android:src="@drawable/logo" />
 
-    <TextView
-        style="@style/text_style"
-        android:text="Quick Expense Sign in" />
+    <EditText
+        android:id="@+id/etName"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        style="@style/editText_style" />
 
     <EditText
         android:id="@+id/etUsername"
-        style="@style/editText_style"
         android:hint="Username"
-        android:inputType="textEmailAddress" />
+        android:inputType="textPersonName"
+        style="@style/editText_style" />
 
     <EditText
         android:id="@+id/etPassword"
-        style="@style/editText_style"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        style="@style/editText_style" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:hint="Age"
+        android:inputType="number"
+        style="@style/editText_style" />
 
     <Button
-        android:id="@+id/bLogin"
-        style="@style/login_style"
-        android:text="LOG IN" />
-
-    <TextView
-        android:id="@+id/registerLink"
-        style="@style/text_style"
-        android:text="New? Register here" />
-
+        android:id="@+id/bRegister"
+        android:text="REGISTER"
+        style="@style/login_style" />
 </LinearLayout>
