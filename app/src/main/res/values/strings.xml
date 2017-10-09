@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">QuickExpense</string>
+
+    <string-array name="Expense_Type">
+        <item>GROCERIES</item>
+        <item>FAST-FOOD</item>
+        <item>GAS</item>
+        <item>EDUCATION</item>
+        <item>HOME-GOODS</item>
+        <item>PET-CARE</item>
+        <item>ENTERTAINMENT</item>
+        <item>PERSONAL</item>
+    </string-array>
 </resources>
